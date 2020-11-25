@@ -47,7 +47,7 @@ void loop() {
 Image credit belongs to [Ada Fruit](https://learn.adafruit.com/assets/2177)
 
 ### Reflection
-write a reflection here, remember that it should be usefull, not a diary entry.
+This assignment was very helpfull in getting me familiarized with aurduino uno.  I though that it was exteremly difficult at times, and it requitred some research and dedication to solve any problems i had, but i quess that is what engineering is about!  I am super excited to continue to work with aurduino and i look forward to more difficult assignments in the future.
 
 ## FiniteLEDBlink
 
