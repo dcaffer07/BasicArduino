@@ -16,11 +16,10 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 ```
 
 ### Evidence
-[Here is my code on Arduino Create](https://create.arduino.cc/editor/helmstk1/9a3831dd-4b86-42f2-be49-c28b84874092/preview)
+[Here is my code on Arduino Create](]https://create.arduino.cc/editor/dcaffer07/f99e84db-5dae-4b41-b6be-9c93e095c7b4)
 
 ### Image or Wiring
-<img src="http://troybaverstock.com/wp-content/uploads/2019/04/arduino-servo-button-red-green-RGB-LED-wiring-diagram.png" width="300px" /> 
-<img src="https://github.com/Helmstk1/BasicArduino/blob/main/images/LED%20Blink.PNG?raw=true" width="300px" /> 
+<img src="https://learn.adafruit.com/assets/2177" width="300px" /> 
 
 Image credit belongs to [Troy Baverstock](https://troybaverstock.com/learn/fritzing-circuit-diagrams/)
 
