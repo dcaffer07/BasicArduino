@@ -97,3 +97,4 @@ Code Credit to KenF from aurduino.cc- [Here is the code](https://forum.arduino.c
 
 
 ### Reflection
+Although I really struggled to get my feet going, with the help of seeing and analyzing someone elses work, I was able to understand what I was doing.  I think that it was a super cool project once I got the hang of it, but like I said I found it pretty diffiucult at first.  Despite some troubles, this was a very fun project amd I look forward to writing new code in the future.
