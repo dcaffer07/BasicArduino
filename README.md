@@ -53,7 +53,7 @@ This assignment was very helpfull in getting me familiarized with aurduino uno. 
 ## FiniteLEDBlink
 
 ### Description & Code
-
+As I have learned from Mr.H and just general engineering, it is okay to use others ideas as long as you give them credit, proper citation, and understand what they did.  In this code, it first connects the LED bulb to the code, it then states how many times per second it needs to blink, and by 500, 500 x 2 =1000, this would mean once a second, it then says that given these facts the following code will operate.  Next it sayd void loop, and in this particular toime it says to repeat this loop of blinking once per second 5 times. That is the basis of the code and how it was built. 
 
 ```C++
   int ledPin = 13;
@@ -87,9 +87,13 @@ void blinkyBlinky(int repeats, int time)
 }
 
 ```
+Code Credit to KenF from aurduino.cc- [Here is the code](https://forum.arduino.cc/index.php?topic=273575.0)
 
 ### Evidence
+[Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/9f383a3b-047e-40ea-9aec-e91fe8d1928e)
 
 ### Image or Wiring
+<img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/1/0/Arduino_circuit_01_01.png" /> 
+
 
 ### Reflection
