@@ -10,7 +10,7 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 ## HelloArduino
 
 ### Description & Code
-In 
+This project being one of my first with aurduino, it was relativeley easy and writing the code.  First, I wrote code esuring a loop for the following things using void set  up.  I then connected the code to an LED light using the pinmode function, I then made the LED blink using delays, and finally by making the monitor show "BLINK" I put a serial begin to turn on my monitor, and then by using serial print I was able to make"Blink" print on the monitore. 
 
 ```C++
 int LED = 13;
@@ -54,9 +54,35 @@ This assignment was very helpfull in getting me familiarized with aurduino uno. 
 
 ### Description & Code
 
-```C++
-Code Goes Here
-```
+int ledPin = 13;
+int blinkTime = 500;
+bool eyesStinging=true;
+
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);
+if(eyesStinging)                         //Only blink if it's absolutely necessary
+  blinkyBlinky(5, blinkTime); // 5 is number of blinks, blinkTime is the milliseconds in each state from above: int blinkTime = 500;
+}
+
+void loop()
+{
+
+
+  //
+}
+
+void blinkyBlinky(int repeats, int time)
+{
+  for (int i = 0; i < repeats; i++)
+  {
+    digitalWrite(ledPin, HIGH);
+    delay(time);
+    digitalWrite(ledPin, LOW);
+    delay(time);
+  }
+}
 
 ### Evidence
 
