@@ -138,3 +138,6 @@ Code credit goes to Karl Helmstetter
 
 ### Image or Wiring
 <img src="https://raw.githubusercontent.com/rgabramedhin93/BasicArduino/main/Screenshot%202020-11-18%20at%204.16.05%20PM.png" /> 
+
+### Reflection
+It is super exciting to know that we are getting closer and closer to the end goal, that being the project.  This was a cool assignment that I addmittingly struggled with at first but eventually got the hang of with some example code.  I really enjoyed working through this and I look forward to more assignments in the future.
