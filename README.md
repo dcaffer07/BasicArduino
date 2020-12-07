@@ -6,6 +6,8 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 * [TableOfContents](#TableOfContents)
 * [HelloArduino](#HelloArduino)
 * [FiniteLEDBlink](#FiniteLEDBlink)
+* [VariableLEDBlink](#VariableLEDBlink)
+
 
 ## HelloArduino
 
@@ -98,3 +100,35 @@ Code Credit to KenF from aurduino.cc- [Here is the code](https://forum.arduino.c
 
 ### Reflection
 Although I really struggled to get my feet going, with the help of seeing and analyzing someone elses work, I was able to understand what I was doing.  I think that it was a super cool project once I got the hang of it, but like I said I found it pretty diffiucult at first.  Despite some troubles, this was a very fun project amd I look forward to writing new code in the future.
+
+## Variable LED Blink
+
+### Description and Code
+The Variable Led Blink is desighned to begin blinking at 1 blink oer second and in order to get it to blink we begin with are standard blinking code.  From here you must use the delayVar code to make the blink slowy get faster.  We do this by making the delayVa5r less and less by subtracting 100milla secpns from each blink until it gets to 5 blinks per second at which point is stops and continues to blink at that rate.
+
+```C++
+  /* Karl Helmstetter
+variable LED BLink
+This should blink an LED faster and faster, until it reaches 5 blinks per second
+*/
+
+int ledPin = 8;
+int delayVar = 1000;  //this variable is used for my delays.
+
+void setup() {
+  pinMode(ledPin,OUTPUT);    
+}
+
+void loop() {
+    digitalWrite(ledPin, HIGH);           // turn the LED on (HIGH is the voltage level)
+    delay(delayVar);                       // wait for a second
+    digitalWrite(ledPin, LOW);            // turn the LED off by making the voltage LOW
+    delay(delayVar);                       // wait for a second
+    Serial.println(delayVar);
+    delayVar = delayVar - 100;
+    
+    //as long as the delay is longer than 100 ms, we should continue to blink,
+    // and we should also 
+}
+```
+# Code credit goes to Karl Helmstetter
