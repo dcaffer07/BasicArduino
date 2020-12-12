@@ -137,4 +137,4 @@ void loop() {
 <img src="https://cvilleschools.instructure.com/courses/31052/files/1951975/download?wrap=1" /> 
 
 ### Reflection
-To be honest I found tis assignment to be one of the easiest assignments that we have done so far.  I though that it was very straight forward, however it is super exciting to know that we are starting to get into the more advanced stuff.  I am super happy with how this assignment went, and I look forward to more like it in the future!
+To be honest I found this assignment to be one of the easiest assignments that we have done so far.  I though that it was very straight forward, however it is super exciting to know that we are starting to get into the more advanced stuff.  I am super happy with how this assignment went, and I look forward to more like it in the future!
