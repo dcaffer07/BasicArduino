@@ -134,7 +134,7 @@ void loop() {
 [Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/2d230442-b3cc-4759-961c-ced619a7f59b)
 
 ### Image or Wiring
-<img src="https://cvilleschools.instructure.com/courses/31052/files/1951975/download?wrap=1" /> 
+<img src="https://www.arduino.cc/wiki/static/875a01f9d20a576acd5b7974e6339339/b2982/button.png" /> 
 
 
 ### Reflection
