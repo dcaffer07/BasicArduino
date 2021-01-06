@@ -241,3 +241,78 @@ void loop() {
 
 ### Reflection
 I really enjoyed this project.  It wasn't too challenging, but it was still engaging.  I think that this project really helped me utilize my breadboard space, whcih sounds weird, but as the wiring has begun to become more and more complicating, it is important that I don't waste space (which will also be important when it comes to the portable button controlled servo project whcih requires good space management).  This was a super cool project, and I look forward to more tasks similar to this one.
+
+## Servo Control
+
+### Description and Code
+In this assignment, we were asked to make a servo one way when one button is pushed, and another way when the other button is pushed.  For this project I kept a lot of the same wiring from the two button two LED project, but abviously I had to add the servo and take out the lights and so two wires from the servo went into the breadboard, one wire to connect to each of the buttons, And then one to the aurduino and its power supply.  In terms of code, ypu first assigned the direction of the buttons with the servo using pins.  I than assigned the servo a name for future code.  From their it was just linking the wiring to the code and used angles to determine the amount that the servo turned.
+
+```C++
+ #include <Servo.h>
+
+Servo myservo;  // my servo
+
+int angle =180;    // start point for servo
+int angleStep =180;
+
+#define LEFT 12   // pin 12 is connected to left button
+#define RIGHT  2  // pin 2 is connected to right button
+
+void setup() {
+  Serial.begin(9600);          //  setup
+  myservo.attach(9);  // servo to pin 9
+  pinMode(LEFT,INPUT_PULLUP); // button 1 to pin 12
+  pinMode(RIGHT,INPUT_PULLUP);//  button 2 to pin 2
+  myservo.write(angle);// send servo to the middle at 90 degrees
+ Serial.println("My Servo Button ");
+}
+
+void loop() {
+  while(digitalRead(RIGHT) == LOW){
+
+    if (angle > 0 && angle <= 180) {
+      angle = angle - angleStep;
+       if(angle < 0){
+        angle = 0;
+       }else{
+      myservo.write(angle); // move the servo to desired angle
+      Serial.print("Moved to: ");
+      Serial.print(angle);   // print the angle
+      Serial.println(" degree");
+       }
+    }
+    
+  delay(100); // waits for the servo to get there
+  }// while
+
+  while(digitalRead(LEFT) == LOW){
+
+    if (angle >= 0 && angle <= 180) {
+      angle = angle + angleStep;
+      if(angle >180){
+        angle =180;
+       }else{
+      myservo.write(angle); // move the servo to the angle wanted
+      Serial.print("Moved to: ");
+      Serial.print(angle);   // print the angle
+      Serial.println(" degree");
+       }
+    }
+    
+  delay(100); // waits for the servo to get there
+  }// 
+
+  
+}
+```
+*I followed along with a video done by robojax... super helpfull as it walked me through each step.
+
+### Evidence
+[Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/0c1d5e67-ebd4-416b-b9f7-a74df59e432d)
+
+### Image of Wiring
+<img src="https://robojax.com/learn/arduino/robojax-servo-push-button.png" /> 
+
+### Reflection
+Great Project, however I really struggled with it even after a vsist to office hours.  So... i searched for help, and i found this great video by robojay that walked me through the whole thing.  It explained every line of code and how the code was connected to the wiring in detail.  Super impressed by te video and it should be a good reference moving forward.  The sigh of relief when it worked was real. Cool project.
+##### [Video by Robojax](https://www.google.com/search?q=button+controlled+servo+wiring&source=lmns&bih=649&biw=1366&rlz=1CAKOHG_enUS917&hl=en&sa=X&ved=2ahUKEwjTttuxtYbuAhULMt8KHTSSAroQ_AUoAHoECAEQAA&safe=active&ssui=on#kpvalbx=_UDb1X9umJIWq1QGTg5GIAg13)
