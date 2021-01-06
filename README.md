@@ -176,6 +176,68 @@ void loop() {
 ### Image of Wiring
 <img src="https://www.arduino.cc/wiki/static/875a01f9d20a576acd5b7974e6339339/b2982/button.png" /> 
 
-
 ### Reflection
 To be honest I found this assignment to be one of the easiest assignments that we have done so far.  I though that it was very straight forward, however it is super exciting to know that we are starting to get into the more advanced stuff.  I am super happy with how this assignment went, and I look forward to more like it in the future!
+
+## Two Buttons Two LEDs
+
+### Description and Code
+Pretty straight forward, just make double of what I did last time.  The goal was to make the two LEDs light up when a button is pushed, and so all i did was make the connections to the breadboard different so that the 2nd LED had its own power supply and ID in the code, but otherwise the wiring was almost the same just simplified and doubled, as was the code, just simplified and doubled.
+
+```C++
+ // These are pin mubers/ enrgy suppliers and where they come from
+// pin numbers:
+const int buttonPin1 = 2;     // button1 pin
+const int buttonPin2 = 4;     // button2 pin
+const int ledPin2 =  8;       // LED2 Pin#
+const int ledPin1 =  11;      // LED1 pin#
+
+
+int buttonState = 0;         // Button status
+
+void setup() {
+  // LED pin as an output:
+  pinMode(ledPin1, OUTPUT);
+  // button pin as an input:
+  pinMode(buttonPin1, INPUT_PULLUP);
+  pinMode(ledPin2, OUTPUT);
+  pinMode(buttonPin2, INPUT_PULLUP);
+}
+
+void loop() {
+  // pushbutton value:
+  buttonState = digitalRead(buttonPin1);
+
+  // check if the pushbutton is pressed.
+  // if it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    digitalWrite(ledPin1, LOW);
+    delay(0);
+    digitalWrite(ledPin1, HIGH);
+    delay(0);
+    digitalWrite(ledPin1, LOW);
+  }
+
+  // pushbutton value:
+  buttonState = digitalRead(buttonPin2);
+
+  // check if the pushbutton is pressed.
+  // if it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    digitalWrite(ledPin2, LOW);
+    delay(0);
+    digitalWrite(ledPin2, HIGH);
+    delay(0);
+    digitalWrite(ledPin2, LOW);
+  }
+}
+```
+
+### Evidence
+[Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/7cffb45e-a83c-4e4f-b0f3-65d2ddc0a245)
+
+### Image of Wiring
+<img src="https://hacksterio.s3.amazonaws.com/uploads/attachments/869889/2leds_2pushbuttons_qrzfpJkZfK.jpg" /> 
+
+### Reflection
+I really enjoyed this project.  It wasn't too challenging, but it was still engaging.  I think that this project really helped me utilize my breadboard space, whcih sounds weird, but as the wiring has begun to become more and more complicating, it is important that I don't waste space (which will also be important when it comes to the portable button controlled servo project whcih requires good space management).  This was a super cool project, and I look forward to more tasks similar to this one.
