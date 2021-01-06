@@ -104,6 +104,45 @@ Code Credit to KenF from aurduino.cc- [Here is the code](https://forum.arduino.c
 ### Reflection
 Although I really struggled to get my feet going, with the help of seeing and analyzing someone elses work, I was able to understand what I was doing.  I think that it was a super cool project once I got the hang of it, but like I said I found it pretty diffiucult at first.  Despite some troubles, this was a very fun project amd I look forward to writing new code in the future.
 
+## VariableLEDBlink
+
+### Description & Code
+In this assignment, we were tasked with constructing code and the appropriate wiring so that an LED would blink faster and faster until it eventually remained constant.   It began at 1oooms on, and 100ms of, and than the breaks and blink times wiuld decrease by 100ms steadilly, so 900ms on and off, than 800ms on and off, and so on a so forth.  Once the code gets down to 100ms on and off, it will stay there and the times will no longer vary.  To do this you just use the simple on LED of LED loop code, however you use a delay var which allows for that 100ms decrease each time.  
+
+```C++
+  /* variable LED BLink
+This should blink an LED faster and faster, until it reaches 5 blinks per second
+*/
+
+int ledPin = 8;
+int delayVar = 1000;  //this variable is used for my delays.
+
+void setup() {
+  pinMode(ledPin,OUTPUT);    
+}
+
+void loop() {
+    digitalWrite(ledPin, HIGH);           // turn the LED on (HIGH is the voltage level)
+    delay(delayVar);                       // wait for a second
+    digitalWrite(ledPin, LOW);            // turn the LED off by making the voltage LOW
+    delay(delayVar);                       // wait for a second
+    Serial.println(delayVar);
+    delayVar = delayVar - 100;
+    
+    //as long as the delay is longer than 100 ms, blinks continue, 
+}
+```
+
+### Evidence
+[Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/34819985-39c3-4c1b-9f74-63c1d841dd2d)
+
+### Image of Wiring
+<img src="https://cdn.sparkfun.com/assets/learn_tutorials/3/1/0/Arduino_circuit_01_01.png" /> 
+
+
+### Reflection
+Cool Project.  I think that this one has helped us ease into the harder projects that are yet to come.  To be honest it is pretty mezmorizing to watch it Blink faster. So as I said I really enjoyed this project and I look forward to more projects in the future! 
+
 ## One Button One LED
 
 ### Description and Code
@@ -134,7 +173,7 @@ void loop() {
 ### Evidence
 [Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/2d230442-b3cc-4759-961c-ced619a7f59b)
 
-### Image or Wiring
+### Image of Wiring
 <img src="https://www.arduino.cc/wiki/static/875a01f9d20a576acd5b7974e6339339/b2982/button.png" /> 
 
 
