@@ -237,7 +237,7 @@ void loop() {
 [Here is the code on Arduino Create](https://create.arduino.cc/editor/dcaffer07/7cffb45e-a83c-4e4f-b0f3-65d2ddc0a245)
 
 ### Image of Wiring
-<img src="https://hacksterio.s3.amazonaws.com/uploads/attachments/869889/2leds_2pushbuttons_qrzfpJkZfK.jpg" /> 
+<img src="https://raw.github.com/d2kagw/learning-arduino/master/serial-io/board.png" /> 
 
 ### Reflection
 I really enjoyed this project.  It wasn't too challenging, but it was still engaging.  I think that this project really helped me utilize my breadboard space, whcih sounds weird, but as the wiring has begun to become more and more complicating, it is important that I don't waste space (which will also be important when it comes to the portable button controlled servo project whcih requires good space management).  This was a super cool project, and I look forward to more tasks similar to this one.
